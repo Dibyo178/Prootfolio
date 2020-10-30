@@ -6,32 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/styles.css">
-    
+
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Portfolio website complete</title>
     <style>
-        .resume:hover {
-            background-image: linear-gradient(to bottom, #ff5898 0%, #ff136f 100%);
+        .resume a{
+            color: wheat;
+        }
+        .resume a:hover {
+            background-image: linear-gradient(to bottom, #0E2431 0%, #4070F4 100%);
             color: #fceae8;
             border: none;
             border-radius: 8px;
-            padding: 9px 10px;
+            padding: 10px 5px;
             cursor: pointer;
         }
-        .react{
+        .container{
+      background-color:#0E2431;
+      clip-path:   polygon(0 0, 100% 0%, 100% 82%, 0% 100%);
+      
+}
+
+        .react {
             width: 20%;
             text-align: center;
         }
-       
+        .image img{
+            width: 80%;
+        }
+        .nav__link {
+            color: wheat;
+        }
+        .website{
+            display: flex;
+           justify-content: space-between;
+        }
+        
+        
     </style>
 </head>
 
 <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
+    <header class="l-header container">
         <nav class="nav bd-grid">
             <div>
                 <a href="#" class="nav__logo"><span style="color: #9CDC09 ;">Sourov Purkayastha</span></a>
@@ -43,7 +63,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="resume">Resume</a></li>
+                    <li class="nav__item resume"><a href="https://drive.google.com/file/d/12aIckkdWhYPlhV0qLR2CCZamJ7wOMnz7/view?usp=sharing" >Resume</a></li>
                 </ul>
             </div>
 
@@ -53,9 +73,9 @@
         </nav>
     </header>
 
-    <main class="l-main">
+    <main class="l-main ">
         <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
+        <section class="home bd-grid " id="home">
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sourov</span><br> Web Developer</h1>
 
@@ -70,10 +90,13 @@
                 <a href="https://github.com/Dibyo178" class="home__social-icon"><i class='bx bxl-github'></i></a>
             </div>
 
-            <div class="home__img">
+            <div class="home__img image">
                 <img src="assets/img/perfil.png" alt="">
             </div>
         </section>
+    </main>
+
+        <main class="l-main ">
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
@@ -85,8 +108,10 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Sourovs</h2>
-                    <p class="about__text">A self-taught software developer with a Bachelor's in Computer Science & Engineering. Besides programming all day, he has a passion for writing about himself in third person.</p>
+                    <h2 class="about__subtitle">I'am Sourov</h2>
+                    <p class="about__text">A self-taught software developer with a Bachelor's in Computer Science &
+                        Engineering. Besides programming all day, he has a passion for writing about himself in third
+                        person.</p>
                 </div>
             </div>
         </section>
@@ -139,7 +164,7 @@
                     <div class="skills__data react">
                         <div class="skills__names">
                             <span><img src="assets/img/react.png" alt="">React</span>
-                            
+
                         </div>
                         <!-- <div class="skills__bar skills__ux">
 
@@ -147,23 +172,23 @@
                         <div>
                             <span class="skills__percentage">85%</span>
                         </div> -->
-                        
+
                     </div>
                     <div class="skills__data react react">
                         <div class="skills__names">
                             <span><img src="assets/img/nodejs.png" alt="">Node JS</span>
-                            
+
                         </div>
-                        
-                        
+
+
                     </div>
                     <div class="skills__data react react">
                         <div class="skills__names">
                             <span><img src="assets/img/mongodb.png" alt="">Mongo Db</span>
-                            
+
                         </div>
-                        
-                        
+
+
                     </div>
                 </div>
 
@@ -180,15 +205,29 @@
             <div class="work__container bd-grid">
                 <div class="work__img">
                     <img src="assets/img/creative agency.png" alt="">
-
+                     
+                         <div class="website">
+                            <h3><a href="https://tender-dijkstra-a0db7f.netlify.app">WEBSITE</a></h3>
+                            <h4><a href="https://github.com/Dibyo178/creative-agency-client">GITHUB</a></h4>
+                         </div>
                 </div>
                 <div class="work__img">
                     <img src="assets/img/travel guru.png" alt="">
+                    <div class="website">
+                        <h3><a href="https://dazzling-brown-be5353.netlify.app">WEBSITE</a></h3>
+                        <h4><a href=" https://github.com/Dibyo178/travel-guru">GITHUB</a></h4>
+                     </div>
+                 
                 </div>
                 <div class="work__img">
                     <img src="assets/img/voluntere network.png" alt="">
+                    <div class="website">
+                        <h3><a href="https://burj-al-arab-node-5c8aa.web.app">WEBSITE</a></h3>
+                        <h4><a href="https://github.com/Dibyo178/volunteer-network-client">GITHUB</a></h4>
+                     </div>
+                 
                 </div>
-                
+
             </div>
         </section>
 
@@ -200,7 +239,8 @@
                 <form action="" class="contact__form">
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Description"></textarea>
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"
+                        placeholder="Description"></textarea>
                     <input type="button" value="Send" class="contact__button button">
                 </form>
             </div>
